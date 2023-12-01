@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="index.css">
+
+    <title>Restaurant Ordering App</title>
+
+    <script src="index.js" type="module" defer></script>   
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Jimmy's Diner</h1>
+            <h5>The best burgers and pizzas in town</h5>
+        </div>
+    </header>
+
+    <main>
+
+    <section class="menu-section">
+        <div class="menu" id="menu">
+           
+        </div>
+    </section>
+
+    <section> 
+        <div class="order-details" id="order-details">
+            <h1>Your order</h1>
+            <div class="items-list" id="items-list">
+                <span id="item-name"></span> <span id="item-price"></span>
+            </div>
+            <div class="total-price" id="total-price"></div>
+        
+            <button class="btn-green" id="place-order">Complete order</button>
+        </div>
+    </section>
+</main>
+    <div class="payment" id="payment">
+        <div class="inner-payment">
+            <h1>Enter card details</h1>
+            <input type="text" required placeholder="Enter yout name">
+            <input type="number" required placeholder="Enter card number">
+            <input type="password" required placeholder="Enter CCV">
+            <button type="submit" class="btn-green" id="card-details-btn">Pay</button>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,159 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+}
+
+main{
+    margin: 0 auto;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+}
+
+.logo{
+    background-image: url("./burger.jpg");
+    background-size: 200px;
+    color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    padding: 48px 0 48px 48px;
+}
+
+.logo h1{
+    margin:0;
+    font-size: 40px;
+    font-family: 'Smythe', sans-serif;
+}
+
+.logo h5{
+    margin: 6px 0 0 0;
+    font-size: 23px;
+    font-family: 'Smythe', sans-serif;
+}
+
+.menu{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container{
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid gray;
+}
+
+.menu-section{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.item-icon{
+    font-size: 72px;
+    margin-left: 60px;
+}
+
+.add-item{
+    border-radius: 50%;
+    border: 2px solid gray;
+    font-size: 30px;
+    padding: 8px;
+    margin: 0 24px 0 auto;
+    background-color: #fff;
+}
+
+.order-details{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    display: none
+}
+
+.item-order{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.item-remove{
+    color: #BBBBBB;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.item-remove:hover{
+    cursor: pointer;
+}
+
+.total-price{
+    border-top: 2px grey solid;
+    justify-content: space-between;
+}
+
+.payment{
+        display: none;
+        position: fixed;
+        right: 0;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        border-radius: 5px;
+        box-shadow: 0px 0px 6px 2px #666;
+        height: 400px;
+        width: 500px;
+}
+
+.inner-payment{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    background-color: #fff;
+    color: #757575;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    flex: 1;
+
+    height: 400px;
+    width: 500px;
+}
+
+.inner-payment > * {
+    width: 440px;
+}
+
+.inner-payment > h1 {
+    text-align: center;
+}
+
+.inner-payment > input{
+    padding: 12px 0;
+    font-size: 24px;
+}
+
+.thanks{
+    background-color: #ECFDF5;
+    color: #065F46;
+    padding: 30px;
+    text-align: center;
+    font-size: 20px;
+    margin: 30px;
+}
+
+.btn-green{
+    background-color: #16DB99;
+    color: #fff;
+    font-size: 24px;
+    border: none;
+    padding: 18px;
+    margin: 12px;
+}
